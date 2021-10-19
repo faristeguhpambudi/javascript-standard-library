@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbol </title>
+</head>
+<body>
+    <script>
+        //SYMBOL
+        {
+            //sudah pasti uniq, biasa dipakai untuk membuat key
+            const firstname = Symbol("firtname"); //yg di dalam kurung adalah deskripsi
+            const lastname = Symbol("lastname"); ///yg di dalam kurung adalah deskripsi
+
+            const person = {};
+            person[firstname] = "Faris";
+            person[lastname] = "Teguh";
+
+
+
+            console.info(person);
+
+
+        }
+
+        //SYMBOL FOR 
+        {
+
+            console.info(Symbol.for("firstName") === Symbol.for("firstName"));
+            const person = {};
+            person[Symbol.for("firstname")] = "Faris";
+            person[Symbol.for("lastname")] = "Teguh";
+
+
+
+            console.info(person);
+
+        }
+    </script>
+</body>
+</html>
