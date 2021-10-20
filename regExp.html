@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression Regexp </title>
+</head>
+
+<body>
+    <script>
+        {
+            //buat regexp
+            const regex1 = /eko/;
+            const regex2 = new RegExp("Eko");
+            const regex2 = new RegExp(/Eko/);
+        }
+
+        {
+            //text regex
+            const name = "Eko Faris Teguh";
+            const regex1 = /Eko/;
+            const result = regex1.exec(name);
+            console.info(result);
+
+            const tes = regex1.test(name);
+            console.info(tes);
+        }
+    </script>
+</body>
+
+</html>
